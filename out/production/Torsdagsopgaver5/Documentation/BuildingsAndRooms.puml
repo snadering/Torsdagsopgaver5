@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+!pragma layout smetana
+Main --* Building
+Building --* Room
+
+class Main
+Main : + static void main(String[] args)
+Main : + static int countLampsInBuilding(Building building)
+Main : + static boolean isNormal(Building building)
+
+class Room
+Room : - int numbersOfDoors;
+Room : - int numbersOfLamps;
+Room : - int numbersOfWindows;
+Room : + Room(int numbersOfDoors, int numbersOfLamps, int numbersOfWindows)
+Room : + getNumberOfDoors()
+Room : + getNumberOfLamps()
+Room : + getNumberOfWindows()
+
+class Building
+Building : - ArrayList<Room>
+Building : - numberOfBathrooms
+Building : - numberOfFloors
+Building : - isOfficeBuilding
+Building : + Building(ArrayList<Room> rooms, int numberOfBathrooms, int numberOfFloors, int isOfficeBuilding )
+Building : + ArrayList<Room> getRooms()
+Building : + int getNumberOfBathrooms()
+Building : + int getNumberOfFloors()
+Building : + boolean isOfficeBuilding()
+
+
+@enduml
