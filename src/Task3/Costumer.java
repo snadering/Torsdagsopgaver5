@@ -5,12 +5,14 @@ public class Costumer {
     private String firstName;
    private String lastName;
    private String username;
-    int id;
-
+   private static int id = 1;
+    private int userID;
     public Costumer(String firstName, String lastName, String username) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
+        this.userID = id;
+        id++;
     }
 
     public String getFirstName() {
@@ -31,6 +33,6 @@ public class Costumer {
                 "First name: " + firstName + "\n" +
                 "Last name: " + lastName + "\n" +
                 "Username: " + username + "\n" +
-                "ID: " + id + "\n";
+                "ID: " + userID + "\n";
     }
 }

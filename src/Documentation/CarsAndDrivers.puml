@@ -2,11 +2,11 @@
 !pragma layout smetana
 'https://plantuml.com/object-diagram
 
-Main --* Car
-Car --* Driver
+Main *-- Car
+Car *-- Driver
 
 class Main
-Main : + static void main[String[] args]
+Main : + {static} void main(String[] args)
 
 class Car
 Car : - String make;

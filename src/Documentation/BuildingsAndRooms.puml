@@ -1,8 +1,8 @@
 @startuml
 'https://plantuml.com/class-diagram
 !pragma layout smetana
-Main --* Building
-Building --* Room
+Main *-- Building
+Building *-- Room
 
 class Main
 Main : + static void main(String[] args)
@@ -19,7 +19,7 @@ Room : + getNumberOfLamps()
 Room : + getNumberOfWindows()
 
 class Building
-Building : - ArrayList<Room>
+Building : - final ArrayList<Room>
 Building : - numberOfBathrooms
 Building : - numberOfFloors
 Building : - isOfficeBuilding

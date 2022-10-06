@@ -8,15 +8,16 @@ public class Main {
         Car c2 = new Car("Ferrari", "F8 Tributo","2020", "Coupe");
 
         //Assigning the driver
-        c1.setDriver("Sander");
-        c2.getDriver();
+        c1.setDriver(d1);
+        c2.setDriver(d1);
 
         //Printing Car #1 and Driver #1
-        System.out.println(c1.toString());
-        System.out.println(d1.toString());
+        System.out.println(c1);
+        System.out.println(c1.getDriver());
         //Printing Car #2 and Driver #1
         System.out.println(c2);
-        System.out.println(d1);
+        System.out.println(c2.getDriver());
+
 
 
     }

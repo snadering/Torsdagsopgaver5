@@ -6,7 +6,7 @@ public class Car {
     private String model;
     private String year;
     private String bodyStyle;
-    private String driver;
+    private Driver driver;
     public Car(String make, String model, String year, String bodyStyle){
 
         this.make = make;
@@ -15,11 +15,11 @@ public class Car {
         this.bodyStyle = bodyStyle;
     }
 
-    public String getDriver() {
+    public Driver getDriver() {
         return driver;
     }
 
-    public void setDriver(String driver) {
+    public void setDriver(Driver driver) {
         this.driver = driver;
     }
 

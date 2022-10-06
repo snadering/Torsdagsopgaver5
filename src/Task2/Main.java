@@ -17,7 +17,7 @@ public class Main {
 
         Building skyscraper = new Building(rooms, 10, 2, true);
         System.out.println(countLampsInBuilding(skyscraper));
-        isNormal(skyscraper);
+        System.out.println(isNormal(skyscraper));
 
     }
 
